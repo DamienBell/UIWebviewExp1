@@ -12,12 +12,28 @@
 
 @end
 
+
 @implementation ViewController
+
+@synthesize webView= _webView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    /*
+    //load an external url
+    
+    NSURL *url= [NSURL URLWithString:@"http://onlyindie.herokuapp.com/"];
+    NSURLRequest *req= [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:req];
+    */
+    
+    //load local html in www directory
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]];
+    [_webView loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning

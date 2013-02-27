@@ -20,8 +20,7 @@ If you'd prefer to load local html then drop your html, css, and js files into a
 
 We'll open our directory with another NSURL object, but this time we'll use the method _fileURLWithPath_ to initializ our NSURL.
 
-    NSURL *url = [NSURL fileURLWithPath:
-                 [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"www"]];
-    [_webView loadRequest:[NSURLRequest requestWithURL:url]]; 
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]];
+    [_webView loadRequest:[NSURLRequest requestWithURL:url]];
 
 Easy!

@@ -18,6 +18,7 @@
 		A8AC15F416DE55610036EF32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8AC15F316DE55610036EF32 /* Default-568h@2x.png */; };
 		A8AC15F716DE55610036EF32 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC15F516DE55610036EF32 /* MainStoryboard.storyboard */; };
 		A8AC15FA16DE55610036EF32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AC15F916DE55610036EF32 /* ViewController.m */; };
+		A8AC160916DE5C3C0036EF32 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A8AC160816DE5C3C0036EF32 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A8AC15F616DE55610036EF32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A8AC15F816DE55610036EF32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A8AC15F916DE55610036EF32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A8AC160816DE5C3C0036EF32 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				A8AC15EC16DE55610036EF32 /* AppDelegate.h */,
 				A8AC15ED16DE55610036EF32 /* AppDelegate.m */,
+				A8AC160716DE5C3C0036EF32 /* www */,
 				A8AC15F516DE55610036EF32 /* MainStoryboard.storyboard */,
 				A8AC15F816DE55610036EF32 /* ViewController.h */,
 				A8AC15F916DE55610036EF32 /* ViewController.m */,
@@ -105,6 +108,14 @@
 				A8AC15F316DE55610036EF32 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8AC160716DE5C3C0036EF32 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC160816DE5C3C0036EF32 /* index.html */,
+			);
+			path = www;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				A8AC15F216DE55610036EF32 /* Default@2x.png in Resources */,
 				A8AC15F416DE55610036EF32 /* Default-568h@2x.png in Resources */,
 				A8AC15F716DE55610036EF32 /* MainStoryboard.storyboard in Resources */,
+				A8AC160916DE5C3C0036EF32 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
