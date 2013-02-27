@@ -4,7 +4,7 @@ Depending on the needs of your app, you may be able to get away with only using 
 
 ##Open an external website in a UIWebview
 
-I'm assuming you've already dropped a webview into your view controller, and connected it in your view controller's .h file. For the sake of this snippet we'll call our webview _webView_.
+Assuming you've already dropped a webview into your view controller, and connected it in your view controller's .h file, just add this into your viewDidLoad function.
 
     - (void)viewDidLoad
     {
@@ -24,3 +24,5 @@ We'll open our directory with another NSURL object, but this time we'll use the 
     [_webView loadRequest:[NSURLRequest requestWithURL:url]];
 
 Easy!
+
+[fork the example code](https://github.com/DamienBell/UIWebviewExp1)
